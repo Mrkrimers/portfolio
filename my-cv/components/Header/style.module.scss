@@ -1,0 +1,84 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    background: var(--balck, radial-gradient(205.3% 154.51% at 91.33% -10.25%, #212225 0%, #1F2025 100%));
+
+
+    .logo {
+        background-image: url('./assets/Course\ topics.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 20px;
+
+        transition: 1s;
+
+        color: #92a2bf;
+
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+
+    nav {
+        padding: 0 30px;
+
+        .ul {
+            display: flex;
+            gap: 13px;
+            list-style-type: none;
+
+            color: var(--White, #F5F8FF);
+            font: 900 18px Poppins;
+            padding-left: 0;
+
+            position: relative;
+            left: 0;
+            right: 0;
+            top: -100px;
+            bottom: 0;
+            z-index: 5;
+
+            transition: top 1s;
+        }
+
+        li {
+            cursor: pointer;
+            transition: all 0.6s;
+
+            &:hover {
+                // text-decoration: underline;
+                transform: scale(1.15);
+            }
+        }
+
+
+        .active {
+            top: 0;
+        }
+    }
+
+
+    .open {
+        background-image: url('./assets/burgerOpen.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        transition: 0.2s;
+    }
+
+    .close {
+        background-image: url('./assets/Close.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        transition: 0.2s;
+    }
+
+}
