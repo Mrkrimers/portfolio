@@ -4,8 +4,6 @@ import style from '../Header/style.module.scss'
 
 const arr = ['HELLO', 'it', 'is', 'Alex', ':)'];
 
-
-
 export default function Header() {
     const [btn, setBtn] = useState(false);
 
